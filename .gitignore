@@ -53,3 +53,4 @@ ios/GoogleService-Info.plist
 *.claude
 .mcp.json
 settings.local.json
+CLAUDE.md
