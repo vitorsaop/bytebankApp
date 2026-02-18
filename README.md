@@ -168,13 +168,22 @@ cd bytebankApp
 ### Passo 2: Configuração do Firebase
 
 1. Acesse o [Firebase Console](https://console.firebase.google.com/)
-2. Crie um novo projeto ou use o existente `bytebankapp-3fe6b`
-3. Adicione um app Android e/ou iOS
+2. Crie um novo projeto Firebase
+3. Adicione um app Android e/ou iOS ao projeto
 4. Baixe os arquivos de configuração:
    - **Android**: `google-services.json` → coloque em `android/app/`
    - **iOS**: `GoogleService-Info.plist` → coloque em `ios/Runner/`
 
-5. **Habilite os serviços no Firebase Console:**
+5. **Configure o arquivo firebase_options.dart:**
+   ```bash
+   # Copie o arquivo de exemplo
+   cp lib/firebase_options.dart.example lib/firebase_options.dart
+   ```
+   - Abra `lib/firebase_options.dart`
+   - Substitua os valores de placeholder (`YOUR_*`) com as configurações reais do seu projeto Firebase
+   - **IMPORTANTE**: NÃO faça commit deste arquivo! Ele já está no `.gitignore`
+
+6. **Habilite os serviços no Firebase Console:**
 
    **Authentication:**
    - Acesse `Authentication` > `Sign-in method`
@@ -187,6 +196,7 @@ cd bytebankApp
 
    **Storage:**
    - Acesse `Storage`
+   - Ative o Firebase Storage
    - Configure as regras de segurança (use as de `storage.rules`)
 
 ### Passo 3: Instalar Dependências

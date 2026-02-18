@@ -47,6 +47,7 @@ app.*.map.json
 # Firebase platform-specific configuration files
 android/app/google-services.json
 ios/GoogleService-Info.plist
+lib/firebase_options.dart
 
 # Claude AI and agent configurations
 .claude/
