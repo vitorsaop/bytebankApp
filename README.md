@@ -368,7 +368,8 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 
 - Desenvolvido como Tech Challenge da Pós-Graduação Front-End Engineering
 
-- Vitor Oliveira
+- Vitor Oliveira | RM368082
+- Douglas Matos Gomes | RM366779
 
 ---
 
